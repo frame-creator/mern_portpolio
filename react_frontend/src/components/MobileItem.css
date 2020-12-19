@@ -1,0 +1,75 @@
+
+
+.project-mobile-item__image {
+  
+   
+}
+
+.project-mobile-item__image video{
+  width: 100%;
+    height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  
+  
+ }
+
+ .project-mobile-item__info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'NEXEN_TIRE_Bold';
+    
+    margin: 20px;
+    text-align: left;
+  }
+  
+  .project-mobile-item__info p {
+    font-size: 16px;
+    font-family:'NEXEN_TIRE_Regular';
+    color: rgb(153,153,153);
+    margin-left: 20px;
+    line-height: 1;
+    text-align: left;
+  }
+  
+  .project-mobile-item__actions {
+    padding-bottom: 20px;
+    padding-top: 0;
+    padding-right:20px;
+    margin-left:20px;
+    text-align: right;
+    
+   
+  }
+  
+  
+  
+  .project-mobile-item__actions button,
+  .project-mobile-item__actions a {
+    margin: 0.5rem;
+  }
+
+  .btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+.btn-app{
+  margin-right: 5px;
+}
+
+.btn-app img {
+    height: 35px;
+    width: auto;
+  
+}
+
+  
+
+ @media (max-width: 768px) {
+    
+    .project-mobile-item__image video{
+        height: 15rem;
+    }
+    
+  }

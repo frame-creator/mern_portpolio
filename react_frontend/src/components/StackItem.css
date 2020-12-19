@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+.stack-item-background-container {
+
+ 
+
+
+    
+    
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  background-size: cover;
+  height: 140px;
+    
+    
+}
+
+.stack-item-background {
+ /* margin-top: 4vw;
+margin-left: 7.5vw;
+ height: 60px;
+ width: 60px;
+ background-size: contain; 
+ background-repeat: no-repeat;
+ 
+ */
+  
+
+ 
+
+}
+
+
+
+.stack-item{
+    /* margin : 1rem 1rem; */
+    display: flex;
+    flex-direction: column;
+    background-color :white;
+    /* #f3ca7d;*/
+    border: 1px solid white;
+    border-radius: 5px;
+    /* padding: 25px; */
+    cursor: pointer;
+   /* backface-visibility: hidden; */
+    transform: translateZ(0);
+    transition: transfrom 0.25s ease-out;
+  
+}
+
+.stack-item__content {
+    padding: 0 ;
+   
+ /*   width: 20vw; */
+ 
+}
+.stack-item__info {
+    padding: 0.3rem;
+   
+    text-align: left;
+}
+
+/*img {
+  height: 20vw;
+  width: 20vw;
+  overflow: hidden;
+  box-sizing: cover;
+  object-fit: cover;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+*/
+
+.container {
+  height : 10vw;
+
+  
+}
+.stack-item__image {
+   /* height: 20vw;
+    width: 20vw;
+    overflow: hidden;
+    box-sizing: cover;
+    object-fit: cover; */
+   
+    width: auto;
+    height: 10vw;
+    
+    padding : 2vw;
+    margin-left: 4vw;
+    
+ 
+   
+   
+
+   
+  }
+  .stack-item__image img {
+   
+    
+    
+    max-height: 5vw;
+   
+    object-fit: cover;
+   
+  
+    
+  }
+
+.stack-item__info h2 {
+    margin: 0 0 0 0 ;
+    font-family: 'Prompt';
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+}
+
+.stack-item__info p {
+  margin: 0 0 0 0 ;
+  font-family: 'NEXEN_TIRE_Regular';
+  color: rgb(153,153,153);
+    font-size: 15px;
+    
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+.stack-item__info .title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0.3rem;
+    font-family: 'Kanit';
+
+
+
+}
+.stack-item__info .address {
+    font-size: 20px;
+    font-family: 'Kanit';
+   
+}
+
+.stack-item__action {
+   font-family: 'Kanit';
+    font-size: 15px;
+    
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  /*   margin: 3rem;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;*/
+    
+}
+
+

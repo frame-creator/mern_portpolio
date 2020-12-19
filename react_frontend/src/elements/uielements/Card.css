@@ -1,0 +1,25 @@
+.card--jk {
+    
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    backface-visibility: hidden;
+    transform: translate3d(0px, 0px, 0px);
+    cursor: pointer;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease 0s, transform 0.2s ease 0s;
+  }
+
+.card--big{
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.08), 0 0 0 1px rgba(0,0,0,0.04);
+  border-radius: 16px;
+  transition: box-shadow 0.2s ease 0s, transform 0.2s ease 0s;
+  overflow: hidden;
+  }
+
+.card--small {
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.08),0 0 0 1px rgba(0,0,0,0.04);
+  border-radius: 16px;
+  overflow: hidden;
+}

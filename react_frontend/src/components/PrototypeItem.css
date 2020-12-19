@@ -1,0 +1,117 @@
+@font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'NEXEN_TIRE_Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/NEXEN_TIRE_Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'NEXEN_TIRE_Regular'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/NEXEN_TIRE_Regular.woff') format('woff'); font-weight: normal; font-style: normal; }
+.prototype-tag{
+  display: inline-block;
+    padding: 0px 15px;
+    line-height: 36px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    
+    height: 38px;
+    border: 1px solid #96f;
+    color: #96f;
+    border-radius: 20px;
+    font-family: 'Prompt','NEXEN_TIRE_Regular';
+
+    
+  
+}
+
+.prototype-tag-list {
+  padding-top: 20px;
+  padding-left : 20px;
+ 
+}
+
+
+.prototype-item {
+  margin: 1rem 0;
+ 
+}
+
+.prototype-item__content {
+  padding: 0;
+    
+}
+
+.prototype-item__info {
+  
+  
+
+
+  
+}
+
+.prototype-item__image {
+  
+  height: 20rem;
+  background-color:  #96f;
+
+  
+}
+
+.prototype-item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+   object-position: center;
+
+    flex-shrink: 0;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.prototype-item__info h2,
+.prototype-item__info h3,
+.prototype-item__info p {
+  margin: 1rem;
+  text-align: left;
+}
+
+.prototype-item__info h2 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'NEXEN_TIRE_Bold';
+}
+
+.prototype-item__info p {
+  font-size: 16px;
+  font-family:'NEXEN_TIRE_Regular';
+  color: rgb(153,153,153);
+}
+
+.prototype-item__actions {
+  padding-top: 1rem;
+  text-align: left;
+  font-family:'NEXEN_TIRE_Regular';
+ 
+}
+
+
+
+
+.prototype-item__actions a {
+  
+  float:right;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+  
+}
+
+@media (max-width: 768px) {
+  .prototype-item__image {
+    height: 20rem;
+  }
+  
+  
+  
+}

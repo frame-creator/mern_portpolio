@@ -1,0 +1,32 @@
+.stack-list {
+    list-style: none;
+
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-column-gap : 40px;
+    grid-row-gap : 40px;
+    margin : 70px;
+    box-sizing: border-box;
+    justify-content: center;
+    
+}
+    
+
+
+/*.stack-list {
+    list-style: none;
+
+   
+   display: grid;
+   grid-template-columns: 276px 1fr 1fr 1fr ; 
+   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+   grid-column-gap : 30px;
+   grid-row-gap : 30px;
+   margin: 50px;
+   box-sizing: border-box;
+   
+
+}
+*/
