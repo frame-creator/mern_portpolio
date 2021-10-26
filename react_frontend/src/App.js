@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import CodeProjects from './pages/CodeProjects';
 import PrototypeProjects from './pages/PrototypeProjects';
 import Blogs from './pages/Blogs';
+import ContactForm from './pages/ContactForm';
 
 
 import MainNavigation from './elements/navigation/MainNavigaton';
@@ -31,6 +32,9 @@ const App = () => {
           </Route>
        <Route path="/prototypeprojects" exact> 
        <PrototypeProjects/>
+       </Route>
+       <Route path="/contact" exact> 
+       <ContactForm/>
        </Route>
        <Route path="/blogs" > 
        <Blogs/>
