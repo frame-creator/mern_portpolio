@@ -1,0 +1,19 @@
+.foot-section {
+    background-color: 
+    rgb(250, 197, 52);
+    padding: 45px;
+    font-size: 80%;
+    
+}
+
+
+
+
+.foot-section p {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'IBMPlexSansKR-Medium';
+    font-size: 1.2rem;
+}
