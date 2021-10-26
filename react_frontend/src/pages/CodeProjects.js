@@ -8,8 +8,9 @@ import MobileList from '../components/MobileList';
 import './CodeProject.css';
 import LoadingSpinner from '../elements/uielements/LoadingSpinner';
 import {useHttpClient} from '../elements/hook/http-hook';
+import Footer from '../components/Footer';
 
-
+/*
 const PROJECTS_MOBILE= [
   {
     feature: 'mobile',
@@ -86,7 +87,7 @@ const PROJECTS_WEB = [
       
     }
   ];
-
+*/
 
 const CodeProjects = () => {
   const {isLoading, error, sendRequest, clearError} = useHttpClient();
@@ -125,6 +126,7 @@ const CodeProjects = () => {
           <LoadingSpinner />
         </div>
       )}
+    <div className="main-box"></div>
    <section> 
      <div className="heading-mobile-project"><h3>Mobile App</h3></div>
      {!isLoading && loadedMobile && <MobileList items={loadedMobile} />}
@@ -134,7 +136,8 @@ const CodeProjects = () => {
   <div className="heading-web-project"><h3>Web</h3></div>
   {!isLoading && loadedWeb &&<ProjectList items={loadedWeb} />}
   </section> 
-  
+  <div className="main-box"></div>
+  <Footer/>
   
 
   </React.Fragment>

@@ -4,7 +4,8 @@ import PrototypeList from '../components/PrototypeList';
 import './PrototypeProject.css';
 import LoadingSpinner from '../elements/uielements/LoadingSpinner';
 import {useHttpClient} from '../elements/hook/http-hook';
-
+import Footer from '../components/Footer';
+/*
 const PROTOTYPES_FRAMER = [
   {
     feature: 'framer',
@@ -67,6 +68,7 @@ const PROTOTYPES_PLAN = [
 
   
 ]
+*/
 const PrototypeProjects = () => {
   const {isLoading, error, sendRequest, clearError} = useHttpClient();
   const [loadedFramer, setLoadedFramer] = useState('');
@@ -103,6 +105,7 @@ const PrototypeProjects = () => {
           <LoadingSpinner />
         </div>
       )}
+      <div className="main-box"></div>
    <section> 
      <div className="heading-prototype"><h3>Framer</h3></div>
      {!isLoading && loadedFramer && <PrototypeList items={loadedFramer} />}
@@ -110,6 +113,8 @@ const PrototypeProjects = () => {
    <div className="heading-prototype"><h3>기획</h3></div>
    {!isLoading && loadedPrototype && <PrototypeList items={loadedPrototype} />}
    </section>
+   <div className="main-box"></div>
+   <Footer/>
    </React.Fragment>
   )
 };

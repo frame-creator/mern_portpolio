@@ -1,9 +1,15 @@
+.main-box {
+    height: 6rem;
+}
+
 .heading-stack-one {
+    
     font-family: Prompt;
     margin-left: 8vw;
-    margin-top:10vw;
+    margin-top: 55vh;
     line-height: 1.1;
     font-size: 30px;
+    color: #fb0;
 }
 
 
@@ -11,5 +17,6 @@
     font-family: Prompt;
     margin-left:8vw;
     font-size: 30px;
+    color: #fb0;
 }
 

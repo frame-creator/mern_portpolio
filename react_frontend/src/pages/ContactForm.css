@@ -1,0 +1,184 @@
+.contact-title {
+    font-size: 1.8rem;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-family: 'Prompt';
+    
+    line-height: 2.05;
+    margin-bottom: 3rem;
+    color: #fb0;
+}
+
+label {
+    font-size: 1.2rem;
+    word-spacing: 2px;
+    text-align: end;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-family: 'Prompt';
+    
+    line-height: 2.05;
+    margin-bottom: 3rem;
+    color: #fb0;
+}
+
+input,
+textarea {
+    font-size: 1rem;
+    word-spacing: 2px;
+    
+    letter-spacing: 1px;
+    font-family: 'Prompt';
+    
+    
+    
+}
+
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } 
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		
+        margin: 0;
+	}
+}
+
+	
+.span-3-of-3 {
+	width: 30%; 
+}
+
+.span-2-of-3 {
+	width: 40%; 
+}
+
+.span-1-of-3 {
+	width: 15%; 
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+	.span-3-of-3 {
+		width: 100%; 
+	}
+	.span-2-of-3 {
+		width: 100%; 
+	}
+	.span-1-of-3 {
+		width: 100%;
+	}
+}
+.section-form {
+  
+   
+}
+
+.form-box{
+    margin-left: 20vw;
+}
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 150px;
+}
+
+
+
+btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: rgb(252, 198, 52);
+    border: 1px solid rgb(252, 198, 52);
+    color: #fff;
+    margin-right: 15px;
+}
+
+
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: rgb(253, 186, 0);
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid rgb(255, 187, 0);
+}
+
+
+
+.btn-box{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+@media only screen and (max-width: 780px) {
+    .span-3-of-3 {
+        width: 30%; 
+    }
+    .span-2-of-3 {
+        width: 80%; 
+    }
+    .span-1-of-3 {
+        width: 80%;
+    }
+
+    .form-box{
+        margin: 0 30px;
+    }
+}

@@ -2,8 +2,10 @@ import React, {useState, useEffect} from 'react';
 import Video01 from '../images/video2.mp4';
 import StackList from '../components/StackList';
 import './Home.css';
+import Welcome from '../components/Welcome';
 import LoadingSpinner from '../elements/uielements/LoadingSpinner';
 import {useHttpClient} from '../elements/hook/http-hook';
+import Footer from '../components/Footer';
 
 
 
@@ -18,6 +20,7 @@ useEffect(() => {
   const fetchStacks = async () => {
     try {
       const responseData = await sendRequest (
+       //'http://localhost:4000/api/projects'
         process.env.REACT_APP_BACKEND_URL + '/projects'
       );
       setLoadedStacks(responseData.stacks);
@@ -30,6 +33,7 @@ useEffect(() => {
     const fetchTools = async () => {
       try {
         const responseData = await sendRequest (
+         // 'http://localhost:4000/api/projects/tool'
           process.env.REACT_APP_BACKEND_URL + '/projects/tool'
         );
         setLoadedTools(responseData.tools);
@@ -42,6 +46,7 @@ useEffect(() => {
       const fetchDesign = async () => {
         try {
           const responseData = await sendRequest (
+           // 'http://localhost:4000/api/projects/design'
             process.env.REACT_APP_BACKEND_URL + '/projects/design'
           );
           setLoadedDesign(responseData.designs);
@@ -58,14 +63,16 @@ useEffect(() => {
           <LoadingSpinner />
         </div>
       )}
-     
+  {!isLoading && <Welcome/>} 
+  <div className="main-box"></div>
   <div><h3 className="heading-stack-one">Stack</h3></div>
   {!isLoading && loadedStacks && <StackList items={loadedStacks} /> };
   <div><h3 className="heading-stack-two">Tool</h3></div>
   {!isLoading && loadedTools && <StackList items={loadedTools} /> };
   <div><h3 className="heading-stack-two">Prototype & Design</h3></div>
   {!isLoading && loadedDesign && <StackList items={loadedDesign} /> };
-    
+  <div className="main-box"></div>
+  <Footer/>
   </React.Fragment>
   )
       
